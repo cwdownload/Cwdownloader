@@ -22,10 +22,10 @@ bot = Client(
 )
 
 logger = logging.getLogger()
-thumb = os.environ.get("THUMB")
-if thumb.startswith("http://") or thumb.startswith("https://"):
-    getstatusoutput(f"wget '{thumb}' -O 'thumb.jpg'")
-    thumb = "thumb.jpg"
+# thumb = os.environ.get("THUMB")
+# if thumb.startswith("http://") or thumb.startswith("https://"):
+#     getstatusoutput(f"wget '{thumb}' -O 'thumb.jpg'")
+#     thumb = "thumb.jpg"
 
 
 @bot.on_message(filters.command(["start"]))
